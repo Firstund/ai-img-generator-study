@@ -11,7 +11,7 @@ app.use(express.json({ limit: '50mb' }));
 app.use(express.static(path.resolve(__dirname, './build')));
 
 const openai = new OpenAI({
-	apiKey: process.env.OPENAI_API_KEY,
+	apiKey: "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",
 });
 
 app.post('/api', async (req, res) => {
